@@ -11,19 +11,7 @@ class MainTest {
 private List<BankAccaunt> list;
     @BeforeEach
     void setUp() {
-       list = List.of(
-                new BankAccaunt(new Person("John", "Doe", "asv@gmail.com"), "1234567890", 1000.0),
-                new BankAccaunt(new Person("Jane", "Doedfe", "asv@gmail.com"), "1234567890", 10.0),
-                new BankAccaunt(new Person("John", "Doade", "asv@gmail.com"), "1234567890", 1.0),
-                new BankAccaunt(new Person("Jane", "Afcvoe", "asv@gmail.com"), "1234567890", 78.0),
-                new BankAccaunt(new Person("John", "Vlkjnoe", "asv@gmail.com"), "1234567890", 13000.0),
-                new BankAccaunt(new Person("Jane", "Shloe", "asv@gmail.com"), "1234567890", 1900.0),
-                new BankAccaunt(new Person("John", "Ldlskoe", "asv@gmail.com"), "1234567890", 230.0),
-                new BankAccaunt(new Person("Jane", "Dsdoe", "asv@gmail.com"), "1234567890", 980.0),
-                new BankAccaunt(new Person("John", "Lfmhncbgoe", "asv@gmail.com"), "1234567890", 120000.0),
-                new BankAccaunt(new Person("Jane", "Foe", "asv@gmail.com"), "1234567890", 15000.0)
-
-        );
+       list = Main.getBankAccaunts();
 
     }
 
